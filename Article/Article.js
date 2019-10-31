@@ -86,6 +86,20 @@ const data = [
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`,
 	},
+	{
+		title           : 'Unicorns Are Taking Over!',
+		date            : 'October 30, 2019',
+		firstParagraph  : 'Unicorns are the BEST!',
+		secondParagraph : 'Unicorns UNITE!',
+		thirdParagraph  : 'Unicorns in rainbow unitards!',
+  },
+  {
+		title           : 'Happy Lambda-ween!',
+		date            : 'October 31, 2019',
+		firstParagraph  : 'Lambda student costume contest underway.',
+		secondParagraph : 'No weapons allowed, real or fake.',
+		thirdParagraph  : 'First place wins a $75 gift card!',
+	},
 ];
 
 /* Step 1: Create a function that creates a component. You will want your component to look like the template below: 
@@ -150,4 +164,4 @@ const articles = data.map((article) =>
 	makeArticle(article.title, article.date, article.firstParagraph, article.secondParagraph, article.thirdParagraph),
 );
 
-articles.forEach(article => document.querySelector('.articles').appendChild(article));
+articles.forEach((article) => document.querySelector('.articles').appendChild(article));
